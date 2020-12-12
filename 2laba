@@ -18,8 +18,8 @@ int main(int argc, char const *argv[])
 	void *src;
 	char *findPtr;
 
-	if((src = mmap(0, len, PROT_READ, MAP_SHARED, file1, 0)) == MAP_FAILED){ // mmap - отражает файлы 										    	    в памяти.  
-		perror("mmap error"); // выводит сообщение об ошибке
+	if((src = mmap(0, len, PROT_READ, MAP_SHARED, file1, 0)) == MAP_FAILED){ 		
+		perror("mmap error"); 
 		}
 	int *lengths = NULL;
 	int *positions = NULL;
